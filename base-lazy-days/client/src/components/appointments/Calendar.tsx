@@ -1,4 +1,3 @@
-/* eslint-disable max-lines-per-function */
 import {
   Box,
   Checkbox,
@@ -18,8 +17,13 @@ import { useAppointments } from './hooks/useAppointments';
 export function Calendar(): ReactElement {
   const currentDate = dayjs();
 
-  const { appointments, monthYear, updateMonthYear, showAll, setShowAll } =
-    useAppointments();
+  const {
+    appointments,
+    monthYear,
+    updateMonthYear,
+    showAll,
+    setShowAll,
+  } = useAppointments();
 
   return (
     <Box>
